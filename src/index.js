@@ -9,7 +9,7 @@ const app = express();
 app.use(morgan('combined'));
 
 app.use(express.json());
-// app.use(express.text());
+app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api',apiRoutes)
